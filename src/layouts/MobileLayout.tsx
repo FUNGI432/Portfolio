@@ -1,7 +1,6 @@
 import './MobileLayout.css'
 
 const mobileLogoSvg = '/mcp/mobile_logo.svg'
-const linkArrowSvg = '/mcp/BmZmY1Y2I1.svg'
 const mobileHeroBg = '/mcp/mobile_hero_bg.png'
 const mobileHeroVector = '/mcp/mobile_hero_vector.svg'
 const mobileHeroArrow = '/mcp/mobile_hero_arrow.svg'
@@ -16,7 +15,6 @@ export default function MobileLayout() {
         
         <a href="#" className="mobile-hire-button">
           <span>hire me</span>
-          <img src={linkArrowSvg} alt="" />
         </a>
       </header>
       

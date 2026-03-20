@@ -43,13 +43,6 @@
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  gap: 8px;
-}
-
-.mobile-hero-arrow img {
-  width: 20px;
-  height: 10px;
-  filter: brightness(0);
 }
 
 /* LANDING PAGE */
@@ -89,6 +82,12 @@
   justify-content: center;
 }
 
+.mobile-hero-vector img {
+  width: 66px;
+  height: 369px;
+  object-fit: contain;
+}
+
 .mobile-info-panel {
   height: 280px;
   background: #c0fe04;
@@ -98,6 +97,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: left;
 }
 
 .mobile-info-panel h1 {
@@ -107,6 +107,7 @@
   text-transform: uppercase;
   margin: 0;
   line-height: 1.1;
+  color: #000;
 }
 
 .mobile-info-panel p {
