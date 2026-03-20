@@ -213,6 +213,10 @@
     padding: 60px 24px;
   }
 
+  .footer-right-mesh {
+    display: none;
+  }
+
   .f2-container {
     gap: 60px;
   }
@@ -240,6 +244,30 @@
     line-height: 1.1;
   }
 
+  /* Footer Branding Refinement */
+  .desktop-only-footer-logo {
+    display: none;
+  }
+
+  .mobile-only-footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 367px;
+    aspect-ratio: 369 / 66;
+    margin-bottom: 20px;
+  }
+
+  .mobile-only-footer-logo img {
+    /* Same mapping as Hero Section */
+    width: calc(100% * (66 / 369)); 
+    height: calc(100% * (369 / 66));
+    transform: rotate(-90deg);
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
   /* Hide excessive bottom links on mobile, show socials */
   .f2-links-box {
     display: none;
@@ -248,13 +276,7 @@
   .f2-bottom-row {
     flex-direction: column;
     align-items: flex-start;
-    gap: 40px;
-  }
-
-  .f2-fungi-graphic {
-    width: 100%;
-    height: auto;
-    max-width: 367px;
+    gap: 20px;
   }
 
   .f2-cookie-text {

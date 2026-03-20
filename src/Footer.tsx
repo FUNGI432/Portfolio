@@ -7,6 +7,7 @@ const imgArrowW = "/mcp/1860badccf318a3a0082315591e809b5996b147a.svg";
 const imgArrowG = "/mcp/366010e44f520854f6275354264f5906a520ba73.svg";
 const imgFungiText = "/mcp/90ee2288c309969f736ee99f78c7f44709be9896.svg";
 const imgCookie = "/mcp/8c23c2cd0effd1cd1a84f553c3195b530ea6cb59.svg";
+const mobileHeroVector = '/mcp/mobile_hero_vector.svg';
 
 export default function Footer() {
   return (
@@ -84,7 +85,10 @@ export default function Footer() {
         {/* BOTTOM ROW */}
         <div className="f2-bottom-row">
           <div className="f2-fungi-text-box">
-            <img src={imgFungiText} alt="FUNGI432" className="f2-fungi-graphic" />
+            <img src={imgFungiText} alt="FUNGI432" className="f2-fungi-graphic desktop-only-footer-logo" />
+            <div className="mobile-only-footer-logo">
+              <img src={mobileHeroVector} alt="FUNGI432" />
+            </div>
           </div>
           <div className="f2-cookie-box">
             <img src={imgCookie} alt="Cookie" className="f2-cookie-img" />
