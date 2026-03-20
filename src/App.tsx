@@ -6,6 +6,8 @@ import ProjectsSlider from './ProjectsSlider'
 import AboutAmanGangwar from './AboutAmanGangwar'
 import Footer from './Footer'
 import JeskoModel from './JeskoModel'
+import LoadingScreen from './LoadingScreen'
+import { useState } from 'react'
 
 const logoSvg = '/mcp/Y2NjZmZmYw.svg'
 const linkArrowSvg = '/mcp/BmZmY1Y2I1.svg'
@@ -16,11 +18,15 @@ const playIconSvg = '/mcp/dkODUwZWMz.svg'
 const railVectorSvg = '/mcp/kwYmMyNTk0.svg'
 
 function App() {
+  const [loading, setLoading] = useState(true);
   const navLinks = ['Case Studies', 'Experience', 'Stack', 'Contact']
 
   return (
     <>
-      <header className="navbar" data-node-id="1:502">
+      <LoadingScreen onFinished={() => setLoading(false)} />
+      
+      <div style={{ opacity: loading ? 0 : 1, transition: 'opacity 1s ease-in-out' }}>
+        <header className="navbar" data-node-id="1:502">
         <a className="navbarLogo" href="#" aria-label="Homepage">
           <img src={logoSvg} alt="" />
         </a>
@@ -82,6 +88,7 @@ function App() {
       <ProjectsSlider />
       <AboutAmanGangwar />
       <Footer />
+      </div>
     </>
   )
 }

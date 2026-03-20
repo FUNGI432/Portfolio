@@ -1,0 +1,59 @@
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.8s ease-in-out, visibility 0.8s;
+  pointer-events: all;
+}
+
+.loading-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loading-logo-container {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.loading-bar-wrapper {
+  width: 300px;
+  height: 2px;
+  background: rgba(192, 254, 4, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.loading-bar-progress {
+  height: 100%;
+  background-color: #c0fe04;
+  width: 0%;
+  transition: width 0.3s ease-out;
+  box-shadow: 0 0 10px #c0fe04;
+}
+
+.loading-text {
+  margin-top: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: #c0fe04;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.loading-percentage {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  font-size: 10px;
+  color: #c0fe04;
+}
