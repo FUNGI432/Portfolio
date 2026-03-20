@@ -1,0 +1,53 @@
+.mobile-layout {
+  background: #000;
+  min-height: 100svh;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+.mobile-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background: #000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.mobile-navbar-logo {
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.mobile-navbar-logo img {
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.mobile-hire-button {
+  height: 60px;
+  padding: 0 40px;
+  background: #c0fe04;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  gap: 8px;
+}
+
+.mobile-hire-button img {
+  width: 20px;
+  height: 10px;
+  filter: brightness(0);
+}
