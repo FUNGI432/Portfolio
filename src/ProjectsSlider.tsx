@@ -24,7 +24,7 @@ export default function ProjectsSlider() {
             <p className="ps-desc">
               A masterclass in rapid, high-precision execution. Following a rigorous 60-day design evolution, the final infrastructure was pushed to production in a high-stakes 7-day sprint by a specialized squad of three. This deployment features a complete wealth management ecosystem, integrating complex data streams into a seamless, high-performance client dashboard.
             </p>
-            <a href="#" className="ps-btn btn-black">
+            <a href="https://testoftitan.vercel.app/" target="_blank" rel="noopener noreferrer" className="ps-btn btn-black">
               EXPLORE DEPLOYMENT <img src={arrowWhite} alt="" className="ps-arrow" />
             </a>
           </div>
@@ -66,7 +66,7 @@ export default function ProjectsSlider() {
             <p className="ps-desc">
               A vast repository of graphic artifacts curated from years of multidisciplinary exploration. These frames represent more than just static design; they are the fragmented data points of a visual identity in constant evolution. From minimalist branding to complex digital layouts, every asset is engineered to cut through the noise and deliver high-impact clarity. Study the patterns. Analyze the composition. Find the signal.
             </p>
-            <a href="#" className="ps-btn btn-white">
+            <a href="https://drive.google.com/drive/folders/10XaL9UDlKPBt4lRQW3HagFD9ctXxDvi3?usp=sharing" target="_blank" rel="noopener noreferrer" className="ps-btn btn-white">
               VIEW FULL ARCHIVE <img src={arrowBlack} alt="" className="ps-arrow" />
             </a>
           </div>

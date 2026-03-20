@@ -43,18 +43,18 @@ export default function DesktopLayout() {
         </nav>
 
         <div className="navbarSocial desktop-only">
-          <a href="#" aria-label="Discord">
+          <a href="https://discord.com/users/509336826071351306" target="_blank" rel="noopener noreferrer" aria-label="Discord">
             <img src={discordSvg} alt="" />
           </a>
-          <a href="#" aria-label="Instagram">
+          <a href="https://www.instagram.com/fungi_432/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <img src={instagramSvg} alt="" />
           </a>
-          <a href="#" aria-label="X">
+          <a href="https://x.com/FUNGI432" target="_blank" rel="noopener noreferrer" aria-label="X">
             <img src={xSvg} alt="" />
           </a>
         </div>
 
-        <a className="hireButton desktop-only" href="#">
+        <a className="hireButton desktop-only" href="https://wa.me/919650289104" target="_blank" rel="noopener noreferrer">
           <span>Hire Me</span>
           <img src={linkArrowSvg} alt="" />
         </a>
@@ -85,11 +85,11 @@ export default function DesktopLayout() {
         
         <div className="mobileNavBottom">
           <div className="mobileSocial">
-            <a href="#" aria-label="Discord"><img src={discordSvg} alt="" /></a>
-            <a href="#" aria-label="Instagram"><img src={instagramSvg} alt="" /></a>
-            <a href="#" aria-label="X"><img src={xSvg} alt="" /></a>
+            <a href="https://discord.com/users/509336826071351306" target="_blank" rel="noopener noreferrer" aria-label="Discord"><img src={discordSvg} alt="" /></a>
+            <a href="https://www.instagram.com/fungi_432/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src={instagramSvg} alt="" /></a>
+            <a href="https://x.com/FUNGI432" target="_blank" rel="noopener noreferrer" aria-label="X"><img src={xSvg} alt="" /></a>
           </div>
-          <a className="mobileHireButton" href="#" onClick={() => setMobileMenuOpen(false)}>
+          <a className="mobileHireButton" href="https://wa.me/919650289104" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
             <span>Hire Me</span>
             <img src={linkArrowSvg} alt="" />
           </a>
@@ -109,7 +109,7 @@ export default function DesktopLayout() {
               Building immersive 3D web experiences and high-performance applications with React, Three.js, and
               algorithmic precision.
             </p>
-            <a className="landingExploreButton" href="#">
+            <a className="landingExploreButton" href="#project-archive">
               <span>Explore Projects</span>
               <img src={linkArrowSvg} alt="" />
             </a>

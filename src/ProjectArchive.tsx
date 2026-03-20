@@ -6,7 +6,7 @@ const metaSvg = "/mcp/d0d8af7f3749d9ec8179613453fa11cf7c52ce7d.svg";
 
 export default function ProjectArchive() {
   return (
-    <section className="pa-section">
+    <section className="pa-section" id="project-archive">
       <div className="pa-top-row">
         <h2 className="pa-title">
           PROJECT<br />
@@ -40,7 +40,7 @@ export default function ProjectArchive() {
       </div>
 
       <div className="pa-bottom-row">
-        <a href="#" className="pa-deploy-btn">
+        <a href="https://github.com/FUNGI432" target="_blank" rel="noopener noreferrer" className="pa-deploy-btn">
           DEPLOYMENTS
           <img src={arrowSvg} alt="" className="pa-arrow" />
         </a>

@@ -19,7 +19,7 @@ export default function MobileLayout() {
           <img src={mobileLogoSvg} alt="FUNGI432" />
         </a>
 
-        <a href="#" className="mobile-hire-button">
+        <a href="https://wa.me/919650289104" target="_blank" rel="noopener noreferrer" className="mobile-hire-button">
           <span>hire me</span>
         </a>
       </header>
@@ -38,7 +38,7 @@ export default function MobileLayout() {
           <p>
             Building immersive 3D web experiences and high-performance applications with React, Three.js, and Algorithmic Precision.
           </p>
-          <a href="#" className="mobile-landing-button">
+          <a href="#project-archive" className="mobile-landing-button">
             <span>Explore Projects</span>
             <img src={mobileHeroArrow} alt="" />
           </a>

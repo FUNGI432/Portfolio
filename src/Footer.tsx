@@ -54,10 +54,10 @@ export default function Footer() {
             {/* Socials Box */}
             <div className="f2-box border-green f2-socials-box">
               <ul className="f2-list text-white">
-                <li><img src={imgArrowW} alt=">" className="f2-icon" /> DISCORD</li>
-                <li><img src={imgArrowW} alt=">" className="f2-icon" /> INSTAGRAM</li>
-                <li><img src={imgArrowW} alt=">" className="f2-icon" /> X</li>
-                <li><img src={imgArrowW} alt=">" className="f2-icon" /> WHATSAPP</li>
+                <li><a href="https://discord.com/users/509336826071351306" target="_blank" rel="noopener noreferrer"><img src={imgArrowW} alt=">" className="f2-icon" /> DISCORD</a></li>
+                <li><a href="https://www.instagram.com/fungi_432/" target="_blank" rel="noopener noreferrer"><img src={imgArrowW} alt=">" className="f2-icon" /> INSTAGRAM</a></li>
+                <li><a href="https://x.com/FUNGI432" target="_blank" rel="noopener noreferrer"><img src={imgArrowW} alt=">" className="f2-icon" /> X</a></li>
+                <li><a href="https://wa.me/919650289104" target="_blank" rel="noopener noreferrer"><img src={imgArrowW} alt=">" className="f2-icon" /> WHATSAPP</a></li>
               </ul>
             </div>
             {/* Quotes Box */}

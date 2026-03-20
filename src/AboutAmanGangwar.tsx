@@ -35,7 +35,7 @@ export default function AboutAmanGangwar() {
             <p className="text-green font-bold about-hobbies-title">OFF-DUTY INTEL // HOBBIES</p>
             
             <ul className="about-hobbies-list">
-              <li>Competitive Logic: Optimizing algorithmic performance and solving complex constraints on CodeChef.</li>
+              <li>Competitive Logic: Optimizing algorithmic performance and solving complex constraints on <a href="https://www.codechef.com/users/fungi432" target="_blank" rel="noopener noreferrer" className="text-green underline">CodeChef</a>.</li>
               <li>Immersive Rendering: Engineering 3D web environments and high-fidelity car showrooms.</li>
               <li>Algorithmic Mastery: Analyzing time complexity and mastering Data Structures and Algorithms (DSA) for $O(n)$ efficiency.</li>
             </ul>
