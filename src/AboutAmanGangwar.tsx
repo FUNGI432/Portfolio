@@ -9,6 +9,9 @@ export default function AboutAmanGangwar() {
     <section className="about-section">
       <div className="about-container">
         
+        {/* Mobile Logo Duplicate */}
+        <img src={fungiLogo} alt="FUNGI Logo" className="about-logo mobile-only-logo" />
+
         {/* Left Side: Frame & Image */}
         <div className="about-left">
           <img src={frameSvg} alt="Profile Frame" className="about-frame-svg" />
@@ -19,7 +22,7 @@ export default function AboutAmanGangwar() {
 
         {/* Right Side: Content */}
         <div className="about-right">
-          <img src={fungiLogo} alt="FUNGI Logo" className="about-logo" />
+          <img src={fungiLogo} alt="FUNGI Logo" className="about-logo desktop-only-logo" />
           
           <h2 className="about-title">Aman gangwar</h2>
           <h3 className="about-subtitle">FUNGI432</h3>
