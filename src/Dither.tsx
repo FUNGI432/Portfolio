@@ -248,7 +248,7 @@ function DitheredWaves({
         />
       </mesh>
 
-      <EffectComposer>
+      <EffectComposer multisampling={0}>
         <RetroEffect colorNum={colorNum} pixelSize={pixelSize} />
       </EffectComposer>
 
