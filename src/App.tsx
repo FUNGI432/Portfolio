@@ -12,7 +12,6 @@ const linkArrowSvg = '/mcp/BmZmY1Y2I1.svg'
 const discordSvg = '/mcp/gzZWI0YWMw.svg'
 const instagramSvg = '/mcp/k1MjQ0ZGJj.svg'
 const xSvg = '/mcp/I1MjRmOTY5.svg'
-const heroVideoFallbackImagePng = '/mcp/BmNjNhNDQ4.svg'
 const playIconSvg = '/mcp/dkODUwZWMz.svg'
 const railVectorSvg = '/mcp/kwYmMyNTk0.svg'
 
