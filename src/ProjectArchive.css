@@ -76,15 +76,53 @@
   background: rgba(255, 255, 255, 0.4);
 }
 
-.pa-corner.top-left { top: 20px; left: 20px; }
-.pa-corner.top-right { top: 20px; right: 20px; }
-.pa-corner.bottom-left { bottom: 20px; left: 20px; }
-.pa-corner.bottom-right { bottom: 20px; right: 20px; }
+.pa-corner.top-left {
+  top: 20px;
+  left: 20px;
+}
 
-.pa-corner.top-left::after { width: 20px; height: 1px; top: 4px; left: -24px; }
-.pa-corner.top-right::after { width: 20px; height: 1px; top: 4px; right: -24px; }
-.pa-corner.bottom-left::after { width: 20px; height: 1px; bottom: 4px; left: -24px; }
-.pa-corner.bottom-right::after { width: 20px; height: 1px; bottom: 4px; right: -24px; }
+.pa-corner.top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.pa-corner.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+.pa-corner.bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+
+.pa-corner.top-left::after {
+  width: 20px;
+  height: 1px;
+  top: 4px;
+  left: -24px;
+}
+
+.pa-corner.top-right::after {
+  width: 20px;
+  height: 1px;
+  top: 4px;
+  right: -24px;
+}
+
+.pa-corner.bottom-left::after {
+  width: 20px;
+  height: 1px;
+  bottom: 4px;
+  left: -24px;
+}
+
+.pa-corner.bottom-right::after {
+  width: 20px;
+  height: 1px;
+  bottom: 4px;
+  right: -24px;
+}
 
 
 .pa-bottom-row {
@@ -142,12 +180,58 @@
     flex-direction: column;
     gap: 40px;
   }
+
   .pa-desc-container {
     width: 100%;
     max-width: 100%;
   }
+
   .pa-bottom-row {
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 760px) {
+  .pa-section {
+    padding: 60px 20px;
+  }
+
+  .pa-title {
+    font-size: 65px;
+  }
+
+  .pa-desc-title {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .pa-desc-text {
+    font-size: 11px;
+  }
+
+  .pa-banner-container {
+    height: 240px;
+    margin-bottom: 30px;
+  }
+
+  .pa-meta-svg {
+    display: none;
+  }
+
+  .pa-bottom-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  .pa-deploy-btn {
+    order: 2;
+  }
+
+  .pa-meta-footer {
+    display: none;
+    /* Hide the footer text on mobile to match design */
   }
 }

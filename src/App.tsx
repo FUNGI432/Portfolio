@@ -9,7 +9,7 @@ const MobileLayout = lazy(() => import('./layouts/MobileLayout'))
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const isMobile = useMediaQuery('(max-width: 428px)');
+  const isMobile = useMediaQuery('(max-width: 768px)');
 
   return (
     <>

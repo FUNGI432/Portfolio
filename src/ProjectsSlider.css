@@ -149,13 +149,14 @@
 @media (max-width: 768px) {
   .ps-info-container.bottom-left,
   .ps-info-container.bottom-right {
-    bottom: 40px;
-    left: 20px;
-    right: 20px;
+    bottom: 20px;
+    left: 0;
+    right: 16px;
     width: auto;
   }
   .ps-info-box {
-    padding: 24px 24px 24px 10px;
+    padding: 24px 20px 30px 16px;
+    border-left-width: 0; /* Flush to left screen edge */
   }
   .ps-btn {
     bottom: -15px;

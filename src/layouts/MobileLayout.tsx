@@ -1,6 +1,9 @@
 import './MobileLayout.css'
 
 import JeskoModel from '../JeskoModel'
+import RecentHighlights from '../RecentHighlights'
+import ProjectArchive from '../ProjectArchive'
+import ProjectsSlider from '../ProjectsSlider'
 
 const mobileLogoSvg = '/mcp/mobile_logo.svg'
 const mobileHeroVector = '/mcp/mobile_hero_vector.svg'
@@ -13,12 +16,12 @@ export default function MobileLayout() {
         <a href="#" className="mobile-navbar-logo">
           <img src={mobileLogoSvg} alt="FUNGI432" />
         </a>
-        
+
         <a href="#" className="mobile-hire-button">
           <span>hire me</span>
         </a>
       </header>
-      
+
       <main className="mobile-landing">
         <section className="mobile-hero-bg">
           <JeskoModel />
@@ -39,6 +42,10 @@ export default function MobileLayout() {
           </a>
         </section>
       </main>
+      
+      <RecentHighlights />
+      <ProjectArchive />
+      <ProjectsSlider />
     </div>
   )
 }
