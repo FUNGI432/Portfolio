@@ -198,7 +198,7 @@
   }
 
   .pa-title {
-    font-size: 65px;
+    font-size: clamp(40px, 11vw, 55px);
   }
 
   .pa-desc-title {

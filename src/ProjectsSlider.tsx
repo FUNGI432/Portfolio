@@ -1,5 +1,6 @@
 import './ProjectsSlider.css';
 import DomeGallery from './DomeGallery';
+import { useMediaQuery } from './hooks/useMediaQuery';
 
 const bgTitantech = "/mcp/c6785b1fd698d3514fc4417b19fc4ceba85009a3.png";
 const bgSenera = "/mcp/e37aadf09efb655a371c3e71c29096bee7d805ea.png";
@@ -7,6 +8,8 @@ const arrowWhite = "/mcp/276c3551c4be3171577d6a19dae569774735a47d.svg";
 const arrowBlack = "/mcp/f8cad7aed88d65ea819c51c45509e6501fe81acf.svg";
 
 export default function ProjectsSlider() {
+  const isMobile = useMediaQuery('(max-width: 768px)');
+
   return (
     <section className="ps-section">
       
@@ -47,8 +50,8 @@ export default function ProjectsSlider() {
       <div className="ps-slide">
         <div className="ps-bg">
           <DomeGallery
-            fit={0.5}
-            minRadius={2000}
+            fit={isMobile ? 0.3 : 0.5}
+            minRadius={isMobile ? 1200 : 2000}
             maxVerticalRotationDeg={8}
             segments={34}
             dragDampening={5}
