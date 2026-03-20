@@ -1,5 +1,4 @@
 import RecentHighlights from '../RecentHighlights'
-import CodeCreateConquer from '../CodeCreateConquer'
 import ProjectArchive from '../ProjectArchive'
 import ProjectsSlider from '../ProjectsSlider'
 import AboutAmanGangwar from '../AboutAmanGangwar'
@@ -122,7 +121,6 @@ export default function DesktopLayout() {
         </aside>
       </main>
       <RecentHighlights />
-      <CodeCreateConquer />
       <ProjectArchive />
       <ProjectsSlider />
       <AboutAmanGangwar />

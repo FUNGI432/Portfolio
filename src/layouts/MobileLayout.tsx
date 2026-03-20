@@ -4,7 +4,6 @@ import JeskoModel from '../JeskoModel'
 import RecentHighlights from '../RecentHighlights'
 import ProjectArchive from '../ProjectArchive'
 import ProjectsSlider from '../ProjectsSlider'
-import CodeCreateConquer from '../CodeCreateConquer'
 
 const mobileLogoSvg = '/mcp/mobile_logo.svg'
 const mobileHeroVector = '/mcp/mobile_hero_vector.svg'
@@ -47,7 +46,6 @@ export default function MobileLayout() {
       <RecentHighlights />
       <ProjectArchive />
       <ProjectsSlider />
-      <CodeCreateConquer />
     </div>
   )
 }
