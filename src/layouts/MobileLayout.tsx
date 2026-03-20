@@ -1,7 +1,8 @@
 import './MobileLayout.css'
 
+import JeskoModel from '../JeskoModel'
+
 const mobileLogoSvg = '/mcp/mobile_logo.svg'
-const mobileHeroBg = '/mcp/mobile_hero_bg.png'
 const mobileHeroVector = '/mcp/mobile_hero_vector.svg'
 const mobileHeroArrow = '/mcp/mobile_hero_arrow.svg'
 
@@ -20,11 +21,12 @@ export default function MobileLayout() {
       
       <main className="mobile-landing">
         <section className="mobile-hero-bg">
-          <img className="mobile-hero-image" src={mobileHeroBg} alt="" />
-          <div className="mobile-hero-vector">
-            <img src={mobileHeroVector} alt="" />
-          </div>
+          <JeskoModel />
         </section>
+
+        <div className="mobile-hero-vector">
+          <img src={mobileHeroVector} alt="" />
+        </div>
 
         <section className="mobile-info-panel">
           <h1>Aman Gangwar</h1>
