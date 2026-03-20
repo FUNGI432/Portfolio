@@ -209,25 +209,56 @@
 }
 
 @media (max-width: 768px) {
-  .f2-upper-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .f2-box {
-    margin-bottom: -1px;
-    margin-right: 0;
-  }
-
-  .f2-box.border-white {
-    grid-column: span 1;
-  }
-
   .footer-v2-section {
-    padding: 60px 20px;
+    padding: 60px 24px;
   }
 
-  .f2-cookie-box {
+  .f2-container {
+    gap: 60px;
+  }
+
+  .f2-upper-grid {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 40px;
+  }
+
+  .f2-logo-box {
+    padding: 0;
+    max-width: 300px;
+    align-self: center;
+  }
+
+  .f2-box.border-green {
+    margin-right: 0;
+    margin-bottom: -1px;
+  }
+
+  .f2-quote-large {
+    font-size: 39px;
+    line-height: 1.1;
+  }
+
+  /* Hide excessive bottom links on mobile, show socials */
+  .f2-links-box {
+    display: none;
+  }
+
+  .f2-bottom-row {
     flex-direction: column;
     align-items: flex-start;
+    gap: 40px;
+  }
+
+  .f2-fungi-graphic {
+    width: 100%;
+    height: auto;
+    max-width: 367px;
+  }
+
+  .f2-cookie-text {
+    font-size: 14px;
+    max-width: 100%;
   }
 }
