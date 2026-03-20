@@ -1,12 +1,12 @@
 import './Footer.css';
 import MetallicPaint from './MetallicPaint';
 
-const imgRight = "http://localhost:3845/assets/223e479e9cfecd464afc2d23ab1bdf6aaf5e6b1e.svg";
-const imgLogoAnim = "http://localhost:3845/assets/6b97ddf3c76f07f6db8e047255c8e50459b888ef.svg";
-const imgArrowW = "http://localhost:3845/assets/1860badccf318a3a0082315591e809b5996b147a.svg";
-const imgArrowG = "http://localhost:3845/assets/366010e44f520854f6275354264f5906a520ba73.svg";
-const imgFungiText = "http://localhost:3845/assets/90ee2288c309969f736ee99f78c7f44709be9896.svg";
-const imgCookie = "http://localhost:3845/assets/8c23c2cd0effd1cd1a84f553c3195b530ea6cb59.svg";
+const imgRight = "/mcp/223e479e9cfecd464afc2d23ab1bdf6aaf5e6b1e.svg";
+const imgLogoAnim = "/mcp/6b97ddf3c76f07f6db8e047255c8e50459b888ef.svg";
+const imgArrowW = "/mcp/1860badccf318a3a0082315591e809b5996b147a.svg";
+const imgArrowG = "/mcp/366010e44f520854f6275354264f5906a520ba73.svg";
+const imgFungiText = "/mcp/90ee2288c309969f736ee99f78c7f44709be9896.svg";
+const imgCookie = "/mcp/8c23c2cd0effd1cd1a84f553c3195b530ea6cb59.svg";
 
 export default function Footer() {
   return (

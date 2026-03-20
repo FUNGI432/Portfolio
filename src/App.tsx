@@ -7,14 +7,14 @@ import AboutAmanGangwar from './AboutAmanGangwar'
 import Footer from './Footer'
 import JeskoModel from './JeskoModel'
 
-const logoSvg = 'https://www.figma.com/api/mcp/asset/6eebde48-48de-47f8-9b77-4f776666fff0'
-const linkArrowSvg = 'https://www.figma.com/api/mcp/asset/f4d25014-e68a-43ea-84d6-a1870fff5cb5'
-const discordSvg = 'https://www.figma.com/api/mcp/asset/f5825bff-1823-4235-afd8-35a583eb4ac0'
-const instagramSvg = 'https://www.figma.com/api/mcp/asset/498c1240-bb13-40f2-a3f9-2e5d95244dbc'
-const xSvg = 'https://www.figma.com/api/mcp/asset/1dd1fbfe-45eb-4a8b-b314-226c2524f969'
-const heroVideoFallbackImagePng = 'https://www.figma.com/api/mcp/asset/c0f1c6c4-56eb-45d9-a6cf-2d7b0f63a448'
-const playIconSvg = 'https://www.figma.com/api/mcp/asset/cc5c67f7-57c7-4107-a780-6aec7d850ec3'
-const railVectorSvg = 'https://www.figma.com/api/mcp/asset/bcd1e03d-6b48-4d64-95c2-d81a90bc2594'
+const logoSvg = '/mcp/Y2NjZmZmYw.svg'
+const linkArrowSvg = '/mcp/BmZmY1Y2I1.svg'
+const discordSvg = '/mcp/gzZWI0YWMw.svg'
+const instagramSvg = '/mcp/k1MjQ0ZGJj.svg'
+const xSvg = '/mcp/I1MjRmOTY5.svg'
+const heroVideoFallbackImagePng = '/mcp/BmNjNhNDQ4.svg'
+const playIconSvg = '/mcp/dkODUwZWMz.svg'
+const railVectorSvg = '/mcp/kwYmMyNTk0.svg'
 
 function App() {
   const navLinks = ['Case Studies', 'Experience', 'Stack', 'Contact']

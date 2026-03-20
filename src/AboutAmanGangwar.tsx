@@ -1,8 +1,8 @@
 import './AboutAmanGangwar.css';
 import profileImg from './assets/aman_gangwar.png';
 
-const frameSvg = "http://localhost:3845/assets/eb94ed8e71a81e921acac6f06dbef3fea29f0183.svg";
-const fungiLogo = "http://localhost:3845/assets/6b97ddf3c76f07f6db8e047255c8e50459b888ef.svg";
+const frameSvg = "/mcp/eb94ed8e71a81e921acac6f06dbef3fea29f0183.svg";
+const fungiLogo = "/mcp/6b97ddf3c76f07f6db8e047255c8e50459b888ef.svg";
 
 export default function AboutAmanGangwar() {
   return (

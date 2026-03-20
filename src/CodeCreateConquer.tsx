@@ -1,8 +1,8 @@
 import './CodeCreateConquer.css'
 import Dither from './Dither';
 
-const arrowSvg = "http://localhost:3845/assets/f34f49f15c3440f7feab8043317cb4b596a84b91.svg";
-const textSvg = "http://localhost:3845/assets/1eb590c01b2762a53db2d6b9d3a443a97c071fcf.svg";
+const arrowSvg = "/mcp/f34f49f15c3440f7feab8043317cb4b596a84b91.svg";
+const textSvg = "/mcp/1eb590c01b2762a53db2d6b9d3a443a97c071fcf.svg";
 
 export default function CodeCreateConquer() {
   return (

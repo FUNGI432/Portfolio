@@ -1,10 +1,10 @@
 import './ProjectsSlider.css';
 import DomeGallery from './DomeGallery';
 
-const bgTitantech = "http://localhost:3845/assets/c6785b1fd698d3514fc4417b19fc4ceba85009a3.png";
-const bgSenera = "http://localhost:3845/assets/e37aadf09efb655a371c3e71c29096bee7d805ea.png";
-const arrowWhite = "http://localhost:3845/assets/276c3551c4be3171577d6a19dae569774735a47d.svg";
-const arrowBlack = "http://localhost:3845/assets/f8cad7aed88d65ea819c51c45509e6501fe81acf.svg";
+const bgTitantech = "/mcp/c6785b1fd698d3514fc4417b19fc4ceba85009a3.png";
+const bgSenera = "/mcp/e37aadf09efb655a371c3e71c29096bee7d805ea.png";
+const arrowWhite = "/mcp/276c3551c4be3171577d6a19dae569774735a47d.svg";
+const arrowBlack = "/mcp/f8cad7aed88d65ea819c51c45509e6501fe81acf.svg";
 
 export default function ProjectsSlider() {
   return (

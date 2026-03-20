@@ -1,8 +1,8 @@
 import './ProjectArchive.css';
 import DarkVeil from './DarkVeil';
 
-const arrowSvg = "http://localhost:3845/assets/f8cad7aed88d65ea819c51c45509e6501fe81acf.svg";
-const metaSvg = "http://localhost:3845/assets/d0d8af7f3749d9ec8179613453fa11cf7c52ce7d.svg";
+const arrowSvg = "/mcp/f8cad7aed88d65ea819c51c45509e6501fe81acf.svg";
+const metaSvg = "/mcp/d0d8af7f3749d9ec8179613453fa11cf7c52ce7d.svg";
 
 export default function ProjectArchive() {
   return (
