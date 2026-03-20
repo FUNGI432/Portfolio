@@ -2,6 +2,9 @@ import './MobileLayout.css'
 
 const mobileLogoSvg = '/mcp/mobile_logo.svg'
 const linkArrowSvg = '/mcp/BmZmY1Y2I1.svg'
+const mobileHeroBg = '/mcp/mobile_hero_bg.png'
+const mobileHeroVector = '/mcp/mobile_hero_vector.svg'
+const mobileHeroArrow = '/mcp/mobile_hero_arrow.svg'
 
 export default function MobileLayout() {
   return (
@@ -17,14 +20,24 @@ export default function MobileLayout() {
         </a>
       </header>
       
-      <main style={{ padding: '40px 24px' }}>
-        <h1 style={{ fontSize: '32px', fontWeight: 700, lineHeight: 1.1, textTransform: 'uppercase' }}>
-          Mobile Systems <br />
-          <span style={{ color: '#c0fe04' }}>Initializing...</span>
-        </h1>
-        <p style={{ marginTop: '20px', fontSize: '14px', opacity: 0.6, lineHeight: 1.5 }}>
-          Implementing brutalist responsive architecture for max-width 428px. Zero PC-asset overhead active.
-        </p>
+      <main className="mobile-landing">
+        <section className="mobile-hero-bg">
+          <img className="mobile-hero-image" src={mobileHeroBg} alt="" />
+          <div className="mobile-hero-vector">
+            <img src={mobileHeroVector} alt="" />
+          </div>
+        </section>
+
+        <section className="mobile-info-panel">
+          <h1>Aman Gangwar</h1>
+          <p>
+            Building immersive 3D web experiences and high-performance applications with React, Three.js, and Algorithmic Precision.
+          </p>
+          <a href="#" className="mobile-landing-button">
+            <span>Explore Projects</span>
+            <img src={mobileHeroArrow} alt="" />
+          </a>
+        </section>
       </main>
     </div>
   )

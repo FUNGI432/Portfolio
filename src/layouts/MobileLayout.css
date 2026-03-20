@@ -46,8 +46,96 @@
   gap: 8px;
 }
 
-.mobile-hire-button img {
+.mobile-hero-arrow img {
   width: 20px;
   height: 10px;
   filter: brightness(0);
+}
+
+/* LANDING PAGE */
+.mobile-landing {
+  position: relative;
+  height: calc(100svh - 60px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-hero-bg {
+  flex: 1;
+  position: relative;
+  background: #000;
+  overflow: hidden;
+}
+
+.mobile-hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.mobile-hero-vector {
+  position: absolute;
+  top: 50%;
+  left: 28px;
+  transform: translateY(-50%) rotate(-90deg);
+  width: 369px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-info-panel {
+  height: 280px;
+  background: #c0fe04;
+  color: #000;
+  padding: 32px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mobile-info-panel h1 {
+  font-family: 'Marathon Shapiro', 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.mobile-info-panel p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.mobile-landing-button {
+  width: 200px;
+  height: 52px;
+  background: #000;
+  color: #c0fe04;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.mobile-landing-button img {
+  width: 22px;
+  height: 11px;
 }
