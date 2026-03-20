@@ -27,7 +27,7 @@ export default function CodeCreateConquer() {
           waveColor={[0.5,0,1]}
           disableAnimation={false}
           enableMouseInteraction
-          mouseRadius={0.9}
+          mouseRadius={0.2}
           colorNum={3.7}
           waveAmplitude={0.19}
           waveFrequency={3}

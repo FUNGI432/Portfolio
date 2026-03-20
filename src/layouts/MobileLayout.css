@@ -73,9 +73,10 @@
 .mobile-hero-vector {
   position: absolute;
   bottom: 290px; /* 280px info panel + 10px gap */
-  left: 28px;
-  width: 369px;
-  height: 66px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  aspect-ratio: 369 / 66;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,8 +84,8 @@
 }
 
 .mobile-hero-vector img {
-  width: 66px;
-  height: 369px;
+  height: 80vw; /* Map original vertical height to screen horizontal width after rotation */
+  width: auto;
   transform: rotate(-90deg);
   object-fit: contain;
 }
