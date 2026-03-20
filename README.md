@@ -1,73 +1,49 @@
-# React + TypeScript + Vite
+# FUNGI432 • Code, Create, Conquer 🧪
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The interactive digital portfolio of **Aman Gangwar (FUNGI432)**, built with React, Vite, and cutting-edge WebGL execution environments.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **CRT Vision 3D Rendering**: A live, rotating Koenigsegg Jesko model immersed in heavy neon green spot-lighting and intense CRT post-processing stacks (Scanlines, Chromatic Aberration, Mathematical Noise, Bloom) natively powered by `@react-three/fiber` and `@react-three/postprocessing`.
+- **Liquid Metal Shaders**: Native integration of the `MetallicPaint` WebGL component, replacing static logomarks with highly viscous, physics-driven DOM frame shaders.
+- **Dither & Interactive Canvas Effects**: Employing heavy geometric grain, `Silk` topologies, and customized dither arrays for robust retro-futuristic vibes across the architectural grid.
+- **DomeGallery Integration**: An interactive swipe-and-gesture-controlled floating 3D gallery utilizing structural translation arrays to project static artwork into an interconnected spatial sphere.
+- **Architectural Grid UI**: Precision 1px wireframe grid implementations housing entirely custom typography offsets, neon-bordered rigid sections, and easter-egg navigational blocks.
 
-## React Compiler
+## 🛠 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Core Framework**: React 19, TypeScript, Vite
+- **WebGL & 3D Environment**: `three.js`, `@react-three/fiber`, `@react-three/drei`, `@react-three/postprocessing`, `ogl`
+- **Physics & Gestures**: `@use-gesture/react`
+- **Styling Subsystem**: Custom-built pure CSS framework utilizing raw mathematical bounds (`clamp()`, spatial `var()` allocations, CSS grid matrix overlaps) without strict dependency bloat.
+- **Typography Matrix**: `KH Interference`, `Inter` and native geometric monospace overlays.
 
-## Expanding the ESLint configuration
+## 💻 Local Development
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Clone the repository:
+```bash
+git clone https://github.com/FUNGI432/Portfolio.git
+cd Portfolio
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. Establish dependencies:
+```bash
+npm install
 ```
+
+3. Ignite the local development server:
+```bash
+npm run dev
+```
+
+Your local environment will spin up routinely on `http://localhost:5173`. 
+
+*(Note: Certain experimental endpoints dynamically pull proxy localized graphical SVGs from specific DEV ports based on your environment configurations).*
+
+## ⚠️ Notes on Complexity
+> *"Complexity is the enemy of execution. I build for clarity, performance, and impact."*
+
+This repository is inherently a live creative sandbox. Experimental shaders and raw spatial bounds frequently step wildly outside the limits of standard CSS DOM flows. Proceed with vision.
+
+---
+*Engineered by Aman Gangwar*
