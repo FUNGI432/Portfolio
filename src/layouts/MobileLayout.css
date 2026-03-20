@@ -85,9 +85,12 @@
 }
 
 .mobile-hero-vector img {
-  width: 100%;
-  height: 100%;
+  /* Map vertical source dimensions (66x369) to horizontal container (369x66) */
+  width: calc(100% * (66 / 369)); 
+  height: calc(100% * (369 / 66));
+  transform: rotate(-90deg);
   object-fit: contain;
+  flex-shrink: 0;
 }
 
 .mobile-info-panel {
