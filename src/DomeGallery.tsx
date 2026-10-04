@@ -2,26 +2,26 @@ import { useEffect, useMemo, useRef, useCallback } from 'react';
 import { useGesture } from '@use-gesture/react';
 import './DomeGallery.css';
 
-import img1 from './assets/dome/1.png';
-import img2 from './assets/dome/2.png';
-import img3 from './assets/dome/3.png';
-import img4 from './assets/dome/4.png';
-import img6 from './assets/dome/6.png';
-import img7 from './assets/dome/7.png';
-import img8 from './assets/dome/8.png';
-import img9 from './assets/dome/9.png';
-import imgBP from './assets/dome/Black Panther.png';
-import imgI1 from './assets/dome/i1.png';
-import imgI2 from './assets/dome/i2.png';
-import imgI3 from './assets/dome/i3.png';
-import imgI4 from './assets/dome/i4.png';
-import imgI5 from './assets/dome/i5.png';
-import imgN1 from './assets/dome/n1.png';
-import imgN2 from './assets/dome/n2.png';
-import imgN3 from './assets/dome/n3.png';
-import imgN4 from './assets/dome/n4.png';
-import imgN5 from './assets/dome/n5.png';
-import imgN6 from './assets/dome/n6.png';
+import img1 from './assets/dome/1.webp';
+import img2 from './assets/dome/2.webp';
+import img3 from './assets/dome/3.webp';
+import img4 from './assets/dome/4.webp';
+import img6 from './assets/dome/6.webp';
+import img7 from './assets/dome/7.webp';
+import img8 from './assets/dome/8.webp';
+import img9 from './assets/dome/9.webp';
+import imgBP from './assets/dome/Black Panther.webp';
+import imgI1 from './assets/dome/i1.webp';
+import imgI2 from './assets/dome/i2.webp';
+import imgI3 from './assets/dome/i3.webp';
+import imgI4 from './assets/dome/i4.webp';
+import imgI5 from './assets/dome/i5.webp';
+import imgN1 from './assets/dome/n1.webp';
+import imgN2 from './assets/dome/n2.webp';
+import imgN3 from './assets/dome/n3.webp';
+import imgN4 from './assets/dome/n4.webp';
+import imgN5 from './assets/dome/n5.webp';
+import imgN6 from './assets/dome/n6.webp';
 
 const DEFAULT_IMAGES = [
   { src: img1, alt: 'Image 1' },
