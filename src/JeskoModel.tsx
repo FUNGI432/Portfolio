@@ -3,6 +3,7 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { useGLTF, Environment, Center } from '@react-three/drei';
 import { EffectComposer, Bloom, Scanline, Noise, Vignette, ChromaticAberration } from '@react-three/postprocessing';
 import * as THREE from 'three';
+import { useMediaQuery } from './hooks/useMediaQuery';
 
 // Use the local asset via Vite resolver
 import jeskoUrl from './assets/jesko.glb?url';
@@ -33,40 +34,47 @@ function Car() {
 }
 
 export default function JeskoModel() {
+  // Phones/low-power GPUs choke on a 5-pass postprocessing stack + uncapped DPR.
+  // Trim both for narrow viewports instead of rendering the full desktop stack everywhere.
+  const isMobile = useMediaQuery('(max-width: 768px)');
+
   return (
     <div style={{ width: '100%', height: '100%', background: '#000000', position: 'absolute', inset: 0, zIndex: 0 }}>
-      {/* Ensure shadows and antialiasing are cranked up */}
-      <Canvas camera={{ position: [3, 1.5, 4], fov: 45 }} gl={{ antialias: false }} shadows>
+      <Canvas
+        camera={{ position: [3, 1.5, 4], fov: 45 }}
+        gl={{ antialias: false, powerPreference: 'high-performance' }}
+        dpr={isMobile ? [1, 1] : [1, 1.5]}
+        performance={{ min: 0.4 }}
+      >
         <color attach="background" args={['#000000']} />
-        
+
         {/* Core Base Global Light */}
         <ambientLight intensity={0.15} color="#ffffff" />
-        
-        {/* Neon Green Showroom Lights */}
-        <spotLight 
-          position={[0, 6, 0]} 
-          angle={0.6} 
-          penumbra={1} 
-          intensity={3.5} 
-          color={NEON_GREEN} 
-          castShadow 
-        />
+
+        {/* Neon Green Showroom Lights (no shadow receivers in scene, so shadow maps are skipped) */}
+        <spotLight position={[0, 6, 0]} angle={0.6} penumbra={1} intensity={3.5} color={NEON_GREEN} />
         <pointLight position={[3, 1, 3]} intensity={2.5} color={NEON_GREEN} distance={8} />
         <pointLight position={[-3, 1, -3]} intensity={2.5} color={NEON_GREEN} distance={8} />
-        
+
         {/* Environmental Reflection mapping to catch neon glimmers on the carbon fibre */}
         <Environment preset="night" environmentIntensity={0.3} />
 
         <Car />
-        
-        {/* CRT Vision Post-Processing Stack */}
-        <EffectComposer>
-          <Bloom luminanceThreshold={0.15} luminanceSmoothing={0.9} intensity={2.0} mipmapBlur />
-          <Scanline density={2.2} opacity={0.25} />
-          <Noise opacity={0.12} />
-          <Vignette eskil={false} offset={0.15} darkness={1.1} />
-          <ChromaticAberration offset={new THREE.Vector2(0.002, 0.002)} />
-        </EffectComposer>
+
+        {/* CRT Vision Post-Processing Stack - reduced on mobile to a single cheap pass */}
+        {isMobile ? (
+          <EffectComposer>
+            <Vignette eskil={false} offset={0.15} darkness={1.1} />
+          </EffectComposer>
+        ) : (
+          <EffectComposer>
+            <Bloom luminanceThreshold={0.15} luminanceSmoothing={0.9} intensity={2.0} mipmapBlur />
+            <Scanline density={2.2} opacity={0.25} />
+            <Noise opacity={0.12} />
+            <Vignette eskil={false} offset={0.15} darkness={1.1} />
+            <ChromaticAberration offset={new THREE.Vector2(0.002, 0.002)} />
+          </EffectComposer>
+        )}
       </Canvas>
     </div>
   );
