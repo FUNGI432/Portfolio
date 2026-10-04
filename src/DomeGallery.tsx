@@ -267,11 +267,36 @@ export default function DomeGallery({
     openedImageHeight
   ]);
 
+  // The sphere auto-rotates every frame forever by default, even while scrolled
+  // out of view or the tab is backgrounded. Gate the rAF loop on actual visibility
+  // so it isn't burning CPU/battery for a gallery nobody is looking at.
+  const isVisibleRef = useRef(true);
+
+  useEffect(() => {
+    const root = rootRef.current;
+    if (!root || typeof IntersectionObserver === 'undefined') return;
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        isVisibleRef.current = entry.isIntersecting;
+      },
+      { threshold: 0.01 }
+    );
+    io.observe(root);
+    return () => io.disconnect();
+  }, []);
+
   useEffect(() => {
     applyTransform(rotationRef.current.x, rotationRef.current.y);
     let rafId: number;
     const autoRotate = () => {
-      if (!draggingRef.current && !openingRef.current && !focusedElRef.current && !inertiaRAF.current) {
+      if (
+        isVisibleRef.current &&
+        !document.hidden &&
+        !draggingRef.current &&
+        !openingRef.current &&
+        !focusedElRef.current &&
+        !inertiaRAF.current
+      ) {
         rotationRef.current.y = wrapAngleSigned(rotationRef.current.y - 0.02);
         if (sphereRef.current) {
           sphereRef.current.style.transform = `translateZ(calc(var(--radius) * -1)) rotateX(${rotationRef.current.x}deg) rotateY(${rotationRef.current.y}deg)`;
@@ -676,7 +701,7 @@ export default function DomeGallery({
                   onClick={onTileClick}
                   onPointerUp={onTilePointerUp}
                 >
-                  <img src={it.src} draggable={false} alt={it.alt} />
+                  <img src={it.src} draggable={false} alt={it.alt} loading="lazy" decoding="async" />
                 </div>
               </div>
             ))}

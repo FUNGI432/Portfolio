@@ -1,11 +1,15 @@
 import './MobileLayout.css'
 
-import JeskoModel from '../JeskoModel'
+import { lazy, Suspense } from 'react'
 import RecentHighlights from '../RecentHighlights'
 import ProjectArchive from '../ProjectArchive'
 import ProjectsSlider from '../ProjectsSlider'
 import AboutAmanGangwar from '../AboutAmanGangwar'
 import Footer from '../Footer'
+
+// Keep three.js/@react-three out of this layout's chunk — on phones this is
+// the single biggest win since the 3D stack is the heaviest JS on the page.
+const JeskoModel = lazy(() => import('../JeskoModel'))
 
 const mobileLogoSvg = '/mcp/mobile_logo.svg'
 const mobileHeroVector = '/mcp/mobile_hero_vector.svg'
@@ -26,7 +30,9 @@ export default function MobileLayout() {
 
       <main className="mobile-landing">
         <section className="mobile-hero-bg">
-          <JeskoModel />
+          <Suspense fallback={null}>
+            <JeskoModel />
+          </Suspense>
         </section>
 
         <div className="mobile-hero-vector">

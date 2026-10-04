@@ -3,8 +3,11 @@ import ProjectArchive from '../ProjectArchive'
 import ProjectsSlider from '../ProjectsSlider'
 import AboutAmanGangwar from '../AboutAmanGangwar'
 import Footer from '../Footer'
-import JeskoModel from '../JeskoModel'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, lazy, Suspense } from 'react'
+
+// Keep three.js/@react-three out of this layout's chunk so nav/hero text/fonts
+// aren't blocked behind parsing the 3D stack.
+const JeskoModel = lazy(() => import('../JeskoModel'))
 
 const logoSvg = '/mcp/Y2NjZmZmYw.svg'
 const linkArrowSvg = '/mcp/BmZmY1Y2I1.svg'
@@ -98,7 +101,9 @@ export default function DesktopLayout() {
 
       <main className="landing" aria-label="Landing section" data-node-id="39:84">
         <section className="landingHero" style={{ position: 'relative' }}>
-          <JeskoModel />
+          <Suspense fallback={null}>
+            <JeskoModel />
+          </Suspense>
           <button className="landingPlayButton" type="button" aria-label="Play intro" style={{ zIndex: 10 }}>
             <img src={playIconSvg} alt="" />
           </button>
